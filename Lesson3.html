@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 multi-media</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+<h3 class="text-center">Form</h3> 
+<!--Container--> 
+
+
+<!--form-->
+<form method="POST" action="account.php" id="form" class="form">
+
+<div class="form-row">
+    <div class="col">
+    <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your Name" size="50" required>
+    </div>  
+    <div class="col">
+<input type="text" name="lname" class="form-control" id="lname" placeholder="Enter Your Name" 
+size="50">
+    </div>
+
+</div>
+<div class="form-row">
+    <div class="col">
+        <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email" size="50">
+    </div>
+    <div class="col">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" size="50">
+    </div>
+</div>
+<br><br>
+
+<textarea name="" class="form-control" id="" cols="52" rows="10"></textarea>
+<br> <br>
+<input type="submit" class="btn btn-success" value="submit">
+<!--Contextual colors - primary, success, info, secondary, muted-->
+
+</form>
+<br>
+<br>
+    <!--Audio-->
+    <h3>Audio</h3>
+    <audio controls muted autoplay loop>
+        <source type="audio/mp3" src="Media/audio.mp3">
+    </audio>
+    <br>
+    <br>
+
+<h3>Videos</h3>
+<video controls width="400" autoplay loop poster="images/wester.jpg">
+    <source type="" src="media/video.mp4">
+</video>
+
+    </div>
+</body>
+
+
+</html>

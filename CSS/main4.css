@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+    --main-color: #05a081;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 18px/1.5 'Raleway';
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.logo {
+    flex: 1;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+.menu a {
+    color: var(--text-color) !important;
+    text-decoration: none;
+}
+
+#showcase {
+    background-image: url(../Images/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#showcase::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.showcase-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.showcase-text-items {
+    align-self: center;
+    width: 60%;
+    color: var(--text-color);
+}
+
+.showcase-text-item h2 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    padding: 5% 0;
+    flex-wrap: wrap;
+}
+
+.main_1 {
+    flex: 1;
+    text-align: center;
+    padding: 3%;
+}
+
+footer {
+    padding: 3%;
+    text-align: center;
+}
